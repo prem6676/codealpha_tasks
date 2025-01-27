@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Gallery</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Title of the Gallery -->
+  <h1 class="gallery-title">Image Gallery</h1>
+
+  <div class="gallery">
+    <!-- Thumbnail Images -->
+    <div class="gallery-item" onclick="openModal('img1')">
+      <img src="jerry.jpg" alt="jerry" id="img1">
+    </div>
+    <div class="gallery-item" onclick="openModal('img2')">
+      <img src="ig.jpg" alt="fish" id="img2">
+    </div>
+    <div class="gallery-item" onclick="openModal('img3')">
+      <img src="cricket.jpg" alt="cricket" id="img3">
+    </div>
+    <div class="gallery-item" onclick="openModal('img4')">
+      <img src="images.jpg" alt="flower" id="img4">
+    </div>
+    <div class="gallery-item" onclick="openModal('img5')">
+        <img src="puppy.jpg" alt="Puppy" id="img5">
+      </div>
+      <div class="gallery-item" onclick="openModal('img6')">
+        <img src="vk.jpg" alt="vk" id="img6">
+      </div>
+      <div class="gallery-item" onclick="openModal('img7')">
+        <img src="krishna.jpg" alt="krishna" id="img7">
+      </div>
+      <div class="gallery-item" onclick="openModal('img8')">
+        <img src="cake.webp" alt="cake" id="img8">
+      </div>
+      <div class="gallery-item" onclick="openModal('img9')">
+        <img src="chick.jpg" alt="chick" id="img9">
+      </div>
+      <div class="gallery-item" onclick="openModal('img10')">
+        <img src="tiger.jpg" alt="tiger" id="img10">
+      </div>
+      <div class="gallery-item" onclick="openModal('img11')">
+          <img src="car.jpg" alt="THAR" id="img11">
+        </div>
+        <div class="gallery-item" onclick="openModal('img12')">
+          <img src="download.jpg" alt="boy" id="img12">
+        </div>
+        <div class="gallery-item" onclick="openModal('img13')">
+          <img src="home.jpg" alt="office" id="img13">
+        </div>
+  </div>
+
+  <!-- Modal -->
+  <div id="myModal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img class="modal-content" id="modalImage">
+    <div id="caption"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
